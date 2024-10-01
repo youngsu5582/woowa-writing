@@ -24,10 +24,10 @@ public AuthInfo resolveArgument(final MethodParameter parameter, final ModelAndV
 ```
 
 본격적인 OSIV 심층 조사에 앞서
-이와 같은 함수는 READ , WRITE 중 어떤 DB 에 연결을 할까요? 
+이와 같은 함수는 READ , WRITE 중 어떤 DB 에 연결을 할까요? 
 ( Class Level 에도 `Transactional` 은 없습니다. )
 
-![300](https://i.imgur.com/RCazs1x.jpeg)
+<img width="500" alt="image" src="https://i.imgur.com/RCazs1x.jpeg">
 
 정답은 READ DB 로 향하게 됩니다.
 
@@ -79,7 +79,7 @@ public class Member {
 
 이와 같은 코드가 있을 때 해당 함수를 호출하면 결과 & 쿼리가 어떻게 될까요?
 
-![300](https://i.imgur.com/RCazs1x.jpeg)
+<img width="500" alt="image" src="https://i.imgur.com/RCazs1x.jpeg">
 
 정답은 
 
@@ -203,7 +203,7 @@ public MemberResponse getMember(final String name) {
 
 사진으로 설명하면
 
-![500](https://i.imgur.com/FXrGnUJ.png)
+<img width="500" alt="image" src="https://i.imgur.com/FXrGnUJ.png">
 
 이와같이 됩니다.
 
@@ -275,7 +275,7 @@ No entity keys found
 로직도 성공적으로 작동하는데 끝일까요...? 단순, 설정을 끄는게 뭔가 꺼림칙 하지 않나요?
 그러므로, 좀 더 알아보겠습니다.
 
-![300](https://i.imgur.com/g52XJuf.jpeg)
+<img width="500" alt="image" src="https://i.imgur.com/g52XJuf.jpeg">
 
 ## OSIV 가 죄악인가
 
@@ -472,5 +472,6 @@ A의 계좌에서 추가적으로 20만원을 인출한다.
 
 이런 관점도 있으니 참고만 해주세요!
 
+<img width="1148" alt="image" src="https://github.com/user-attachments/assets/842dcf09-0b20-46d2-bdc3-8501973e3654">
 
 이상입니다. 감사합니다!
